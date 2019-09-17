@@ -12,13 +12,13 @@
             display.textContent = minutes + ":" + seconds;
 
             if (--timer < 0) {
-                timer = duration;
+                timer = duration; 
             }
         }, 1000);
     }
 
     window.onload = function () {
-        var twofiveMinutes = 10,
+        var twofiveMinutes = 60*5*5,
             display = document.querySelector('#time');
         startTimer(twofiveMinutes, display);
     }
